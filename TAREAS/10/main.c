@@ -33,8 +33,6 @@ int main(int argc, char *argv[]){
 				double xunica;//tendra un valor unico,que son los tcp
 				xunica=-b/2*a;//solo se usa este termino
 				printf("%.2lf\n",xunica);
-			
-			}
 			}
 			}
 		}
