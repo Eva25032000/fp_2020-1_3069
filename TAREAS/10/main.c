@@ -35,8 +35,6 @@ int main(int argc, char *argv[]){
 				printf("%.2lf\n",xunica);
 			
 			}
-		else{
-				printf("no existe valores para esta ecuacion");
 			}
 			}
 		}
