@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <math.h>
 #include <stdlib.h>
-//este programa realiza la funcion cuadratica
 int main(int argc, char *argv[]){
 	double a,b,c,discriminante,potencia,multiplicacion;
 	a=atof(argv[1]);//variable del coeficiente al cuadrado
@@ -20,19 +19,21 @@ int main(int argc, char *argv[]){
 	}
 	else{//si no se cumple 
 		if(discriminante<0){//condicion cuando el discriminate es negativo
-			double discriminante2,imaginario1,imaginario2,raiz1,x1,raiz2;//nuevas variables
+			double discriminante2,imaginario1,imaginario2,raiz,x1;//nuevas variables
 			discriminante2=(multiplicacion-potencia);//intercambiar el orden de del discriminate para efectuar con numeros imaginarios
 			x1=-b/2*a;//dejar la parte real a parte
-			raiz1=sqrt(discriminante2);//sacamos raiz a al discriminate con numeros imaginarios
-            raiz2=-sqrt(discriminante2);
-				printf("%.2lf+%.2lfi\n",x1,raiz1);
-				printf("%.2lf%.2lfi\n",x1,raiz2);
+			raiz=sqrt(discriminante2);//sacamos raiz a al discriminate con numeros imaginarios
+			imaginario1=x1+raiz;//raiz 1 con numeros imaginarios
+			imaginario2=x1-raiz;//raiz 2 con numeros imaginarios
+				printf("%.2lfi\n",imaginario1);
+				printf("%.2lfi\n",imaginario2);
 	}
 		else{//si ninguna de las anteriores se cumple
 			if(discriminante==0){//condicion cuando el discriminante vale cero;
 				double xunica;//tendra un valor unico,que son los tcp
 				xunica=-b/2*a;//solo se usa este termino
 				printf("%.2lf\n",xunica);
+			
 			}
 			}
 		}
