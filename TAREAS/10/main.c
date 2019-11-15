@@ -19,13 +19,11 @@ int main(int argc, char *argv[]){
 	}
 	else{//si no se cumple 
 		if(discriminante<0){//condicion cuando el discriminate es negativo
-			double discriminante2,imaginario1,imaginario2,raiz,x1;//nuevas variables
+			double discriminante2,raiz,x1;//nuevas variables
 			discriminante2=(multiplicacion-potencia);//intercambiar el orden de del discriminate para efectuar con numeros imaginarios
 			x1=-b/2*a;//dejar la parte real a parte
-			raiz=sqrt(discriminante2);//sacamos raiz a al discriminate con numeros imaginarios
-			imaginario1=x1+raiz;//raiz 1 con numeros imaginarios
-			imaginario2=x1-raiz;//raiz 2 con numeros imaginarios
-				printf("%.2lf %.2lfi\n",x1,raiz);
+			raiz=sqrt(discriminante2)/2*a;//sacamos raiz a al discriminate con numeros imaginarios
+				printf("%.2lf+%.2lfi\n",x1,raiz);
 				printf("%.2lf-%.2lfi\n",x1,raiz);
 	}
 		else{//si ninguna de las anteriores se cumple
