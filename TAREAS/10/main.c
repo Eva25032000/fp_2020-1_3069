@@ -23,7 +23,7 @@ int main(int argc, char *argv[]){
 			discriminante2=(multiplicacion-potencia);//intercambiar el orden de del discriminate para efectuar con numeros imaginarios
 			x1=-b/2*a;//dejar la parte real a parte
 			raiz=sqrt(discriminante2)/2*a;//sacamos raiz a al discriminate con numeros imaginarios
-				printf("%.2lf+%.2lfi\n",x1,raiz);
+				printf("%.2lf +%.2lfi\n",x1,raiz);
 				printf("%.2lf-%.2lfi\n",x1,raiz);
 	}
 		else{//si ninguna de las anteriores se cumple
