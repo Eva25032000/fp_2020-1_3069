@@ -25,8 +25,8 @@ int main(int argc, char *argv[]){
 			raiz=sqrt(discriminante2);//sacamos raiz a al discriminate con numeros imaginarios
 			imaginario1=x1+raiz;//raiz 1 con numeros imaginarios
 			imaginario2=x1-raiz;//raiz 2 con numeros imaginarios
-				printf("%.2lfi\n",imaginario1);
-				printf("%.2lfi\n",imaginario2);
+				printf("%.2lf %.2lfi\n",x1,raiz);
+				printf("%.2lf-%.2lfi\n",x1,raiz);
 	}
 		else{//si ninguna de las anteriores se cumple
 			if(discriminante==0){//condicion cuando el discriminante vale cero;
